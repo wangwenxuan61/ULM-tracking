@@ -1,5 +1,5 @@
 # ULM-tracking
-Efficient microbubble tracking algorithm in Ultrasound localization microscopy (ULM).
+Example for efficient microbubble tracking algorithm in Ultrasound localization microscopy (ULM).
 
 ---
 
@@ -12,8 +12,7 @@ The CEUS (Contrast Enhanced Ultrasound) data contains preprocessed ultrasound im
 ```text
 data/
 └── ceus/
-    ├── *.bin          # Preprocessed CEUS image sequences (binary format)
-    └── size.mat       # Image dimension information for reshaping
+    └── *.bin          # Preprocessed CEUS image sequences (binary format)
 ```
 
 ---
@@ -50,11 +49,11 @@ sI_t{1} = [
 
 The `PTVPara` structure contains all the configurable parameters for the microbubble tracking algorithm. These parameters control various aspects of the particle tracking velocimetry (PTV) process:
 
-<img src="imgs/image-20250823113725193.png" alt="image-20250823113725193" style="zoom:40%;" />
+<img src="imgs/image-20250823113725193.png" alt="image-ptv" style="zoom:40%;" />
 
 | Parameter                | Variable        | Default Value      | Description                                                  |
 | :----------------------- | :-------------- | :----------------- | :----------------------------------------------------------- |
-| **Max Velocity**         | `maxV`          | 15                 | Maximum expected velocity in cm/s (converted to pixels/frame based on `pixdis/fps`) |
+| **Max Velocity**         | `maxV`          | 15                 | Maximum expected velocity in cm/s (can be converted to pixels/frame based on `pixdis/fps`) |
 | **Bubble Radius**        | `bblR`          | 2                  | Expected microbubble radius in pixels for detection          |
 | **Velocity Uncertainty** | `sigmaV`        | 5                  | Uncertainty in velocity estimation for Kalman filter (affects prediction accuracy) |
 | **Heatmap Overlap**      | `ovlppct`       | [90 50 25]         | Overlap percentage thresholds for heatmap-based tracking at different search levels |
@@ -87,4 +86,6 @@ To get the full files, please **clone the repository using Git with LFS support*
 
 ---
 
-If you have some problems or can not run successfully in `main` function, please email: wangwx2024@shanghaitech.edu.cn
+If you have some problems or can not run successfully in `main` function, please email: wangwx2024@shanghaitech.edu.cn. For full access to the code or any permissions, please contact the corresponding author email: zhangzeng@shanghaitech.edu.cn.
+
+ 
