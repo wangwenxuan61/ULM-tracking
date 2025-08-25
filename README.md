@@ -81,4 +81,10 @@ If `PTVParas` are suitable for tracking, then you can run for all frame tracking
 
 ---
 
+Note: The `.mat` files in this repository are stored using **Git LFS** (Large File Storage). If you download the repository as a ZIP file directly from GitHub (e.g., via the "Download ZIP" button), these files will only appear as small placeholder files (around 1 KB), containing metadata instead of the actual data.
+
+To get the full files, please **clone the repository using Git with LFS support**. For more details, see: [https://git-lfs.com](https://git-lfs.com/). Alternatively, you can view and download individual `.mat` files directly from the GitHub website by navigating to the file and clicking **"Download"** (not "Raw"), which may provide the full content if rendered correctly.
+
+---
+
 If you have some problems or can not run successfully in `main` function, please email: wangwx2024@shanghaitech.edu.cn
