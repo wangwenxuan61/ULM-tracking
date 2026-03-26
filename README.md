@@ -49,7 +49,7 @@ sI_t{1} = [
 
 The `PTVPara` structure contains all the configurable parameters for the microbubble tracking algorithm. These parameters control various aspects of the particle tracking velocimetry (PTV) process:
 
-<img src="imgs/image-20250823113725193.png" alt="image-ptv" style="zoom:40%;" />
+<img src="imgs/image-ptv.png" alt="image-ptv" style="zoom:40%;" />
 
 | Parameter                | Variable        | Default Value      | Description                                                  |
 | :----------------------- | :-------------- | :----------------- | :----------------------------------------------------------- |
