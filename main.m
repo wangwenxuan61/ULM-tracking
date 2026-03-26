@@ -5,6 +5,10 @@ clc
 clear
 close all
 
+if isempty(gcp('nocreate'))   % If no pool, do not create new one.
+    parpool('Processes');
+end
+
 %% image path for saving track-test image
 dataPath = 'data';
 imgPath = 'imgs';
@@ -23,5 +27,4 @@ pixdis = 1e-2/sqrt((Prop.Dx.^2+Prop.Dz.^2)/2);   % 1 cm = n pix
 imgSize = Prop.ImgSize;
 
 %% run multi-hypothesis tracking
-runMHT;
-
+RunMultiHypothesisTracking;
